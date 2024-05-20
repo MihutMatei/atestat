@@ -1,65 +1,65 @@
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
+// Sidebar control
 var mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
 }
 
-
-// Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
 }
-  // Slideshow
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-  
-  function showDivs(n) {
+
+// Slideshow control (Automatic)
+var autoSlideIndex = 0;
+showSlides();
+
+function showSlides() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demodots");
-    if (n > x.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    autoSlideIndex++;
+    if (autoSlideIndex > slides.length) {autoSlideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[autoSlideIndex-1].style.display = "block";  
+    dots[autoSlideIndex-1].className += " active";
+    setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+
+// Slideshow control (Manual)
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-white", "");
+        dots[i].className = dots[i].className.replace(" w3-white", "");
     }
-    x[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " w3-white";
-  }
-  const f = document.getElementById('form');
-  const q = document.getElementById('query');
-  const google = 'https://www.google.com/search?q=site%3A+';
-  const site = 'pagedart.com';
-  
-  function submitted(event) {
-    event.preventDefault();
-    const url = google + site + '+' + q.value;
-    const win = window.open(url, '_blank');
-    win.focus();
-  }
-  
-  f.addEventListener('submit', submitted);
+}
+
+

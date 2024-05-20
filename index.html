@@ -6,139 +6,20 @@
 
   <head>
     <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css” rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”> 
-    <title>Estate Finders</title>
+    <title>British Parliamentary debate</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>  
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 
 
 
-<!--STYLE SHEET-->
-
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 3000px;
-  background-size: cover;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: white;
-  
-
-  font-size: 4vw;
-  padding: 0px 12px;
-  position: absolute;
-  
-  bottom: 300px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #000000;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 40px;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.block {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-}
-
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-
-@media only screen and (max-width: 1300px) {
-  .text {font-size: 1.9vh }
-  .text{top: 130px}
-  .button{bottom: 200px;}
-}
-</style>
-    <style>
-
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-    .mySlides {display:none}
-    .w3-tag, .fa {cursor:pointer}
-    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-    }
-
-
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
-      min-height: 20%;
-    }
-
-    .w3-bar .button {
-      padding: 16px;
-     
-
-    }
-    
-    </style>
   </head>
 <body>
 
@@ -149,17 +30,18 @@ img {vertical-align: middle;}
  
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">BP</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#home" class="w3-bar-item w3-button">Acasa</a>
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
       
-      <a href="#anunt" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> Vanzare</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Echipa</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Oferte</a>
+      <a href="#definition" class="w3-bar-item w3-button"><i class="fa fa-th"></i> definition</a>
+      <a href="#istorie" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> History</a>
+   
+      <a href="#roles" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Speaker roles</a>
      
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> Contact</a>
-      
+      <a href="join_us.html" class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> Play</a>
+       
     </div>
   
 
@@ -176,13 +58,15 @@ img {vertical-align: middle;}
 
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#home" class="w3-bar-item w3-button">Acasa</a>
- 
-      <a href="#anunt" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> Vanzare</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Echipa</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Oferte</a>
+  <a href="#home" class="w3-bar-item w3-button">Home</a>
+      
+      <a href="#definition" class="w3-bar-item w3-button"><i class="fa fa-th"></i> definition</a>
+      <a href="#istorie" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> History</a>
+   
+      <a href="#roles" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Speaker roles</a>
      
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> Contact</a>
+      <a href="join_us.html" class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> Play</a>
+      
     
 </nav>
 
@@ -193,248 +77,210 @@ img {vertical-align: middle;}
  <!-- Slideshow -->
  <header w3-display-container w3-grayscale-min id="home"> 
   
- <div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="house1.jpg"  style="width: 100%;height:auto;"   >
-    <div class="text"  >Găsește casa pe care să o numești acasă <br>Începeți căutarea de acum<br>  
-      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-xlarge w3-margin-top w3-margin-bottom:40px" style="font-size:3vw; margin-bottom: 70px;">Programează o întâlnire</a></p><br></div>
-
-  </div>
+ <div class="slideshow-container w3-light-grey">
+  <div class="mySlides fade w3-light-grey">
    
-  
-  
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="house2.jpg"  style="width:100% ;height: auto;">
-    <div class="text">Găsește casa pe care să o numești acasă <br>Începeți căutarea de acum<br>  
-      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-xlarge w3-margin-top "style="font-size:3vw;margin-bottom:70px">Programează o întâlnire</a></p><br></div>
-
+    <img src="images_bp/slide1.webp" class="w3-card">
+    <div class="text"><h1>Debates ignite minds and inspire change</h1></div>
   </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="house4.jpg" style="width:100% ;height: auto;">
-    <div class="text" >Găsește casa pe care să o numești acasă <br>Începeți căutarea de acum<br>  
-      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-xlarge w3-margin-top "style="font-size:3vw; margin-bottom:70px">Programează o întâlnire</a></p><br></div>
 
-  </div>
+  <div class="mySlides fade w3-light-grey" class="w3-card">
    
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
+    <img src="images_bp/slide2.jpg">
+    <div class="text"><h1>Debates ignite minds and inspire change</h1></div>
   </div>
 
+  <div class="mySlides fade w3-light-grey" class="w3-card">
+    
+    <img src="images_bp/slide3.jpg" >
+    <div class="text"><h1>Debates ignite minds and inspire change</h1></div>
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
 </header>
 
 
 
 
 
-
-
-<!-- About Section -->
-<!-- <div class="w3-container" style="padding:128px 16px" id="contact" >
-  <h3 class="w3-center">DESPRE NOI</h3>
-  <p class="w3-center w3-large">Serviciile noastre</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Lorem</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Ipsum</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Phasellus</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Fabicius</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-</div> -->
-
-
-
-
-
-
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-white" style="padding:128px 16px" id="anunt">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3 >Postează anunțuri!</h3>
-      <p style="font-size: 20px;">Pentru a posta anunțuri, vă rugăm să contactați prin email sau telefon agenții noștrii pentru a discuta detaliile semnificative.</p>
-
-      <h3><a href="#about" class="w3-btn w3-black"><i class="fa fa-th"> Contactează-ne</i> </a></h3>
- 
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://www.w3schools.com/w3images/phone_buildings.jpg"  style="width: 100%; height:100%">
+<!--start rant-->
+<div class="w3-white w3-container" style="padding:128px 16px" id="definition">
+  <div class="title_bp">
+    <h1>What is the British Parliamentary style of debate?</h1>
+    <div class="content_1">The British Parliamentary (BP) style of debate is a structured form of competitive debate that emphasizes the development of critical thinking, persuasive communication, and informed engagement with global issues.</div>
+    <div class="w3-display-container w3-center">
+      <a href="https://en.wikipedia.org/wiki/British_Parliamentary_Style" target="_blank"><img src="images_bp/chat1.webp" class="w3-hover-sepia w3-card"></a>
     </div>
   </div>
 </div>
 
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="istorie">
+  <div class="title_bp w3-light-grey">
+    <h1>What are the roots of BP debate?</h1>
+    <div class="content_1 w3-light-grey">
+      The British Parliamentary (BP) style of debate traces its roots back to the traditions of the British Parliament, where formal debate has been a cornerstone of legislative procedure since the early days of British governance. The practice of structured debate in Parliament was designed to allow representatives to argue the merits and demerits of proposed legislation and policies, fostering a culture of rigorous public discourse.
+    </div>
+    <div class="w3-display-container w3-center">
+      <a href="https://en.wikipedia.org/wiki/Timeline_of_Cambridge" target="_blank"><img src="images_bp/statui.webp" class="w3-hover-sepia w3-card"></a>
+    </div>
+    <div class="content_1 w3-light-grey">
+      The BP format as we know it today began to take shape in the 19th century, particularly in British universities. The Oxford and Cambridge Unions played a significant role in formalizing debate practices, setting the stage for what would become a globally recognized debating format. These university debates mirrored the adversarial style of parliamentary debates, emphasizing clarity of argument, persuasive speaking, and quick thinking.
+    </div>
+  </div>
+</div>
 
+<div class="w3-gray w3-container" style="padding:128px 16px" >
+  <div class="title_bp w3-gray">
+    <h1>How do you debate in this format?</h1>
+    <div class="content_1 w3-gray">The theoretical underpinnings of BP debate draw from classical and contemporary theories of rhetoric and argumentation. Classical rhetoric, as articulated by Aristotle, emphasizes the modes of persuasion: ethos (credibility), pathos (emotional appeal), and logos (logical reasoning).
+
+    </div>
+    <div class ="content_1 w3-gray" >The British Parliamentary (BP) style of debate is characterized by its unique structure, which involves four teams and eight speakers in each round. The teams are divided into two sides: the Government (or Proposition) and the Opposition. Each side consists of two teams: the Opening Government and Closing Government on one side, and the Opening Opposition and Closing Opposition on the other. This format encourages a dynamic and multi-faceted debate, as each team must not only present its case but also respond to the arguments of three other teams.
+
+    </div>
+  </div>
+</div>
+
+<div class="w3-white w3-container" style="padding:128px 16px" id = "roles">
+  <div class="title_bp">
+    <h1 class="w3-xxlarge">What are the speaker roles?</h1>
+    
+    <!-- Opening Government Section -->
+    <div class="w3-container" style="padding:64px 16px" id="opening-government">
+      <h3 class="w3-center w3-xlarge">Opening Government (OG)</h3>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:32px">
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Prime Minister (PM)">
+            <div class="w3-container">
+              <h3 class="w3-large">Prime Minister (PM)</h3>
+              <p class="w3-opacity w3-medium">First speaker for the Opening Government.</p>
+              <p>Responsible for defining the motion, presenting the case, and laying out the main arguments.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Deputy Prime Minister (DPM)">
+            <div class="w3-container">
+              <h3 class="w3-large">Deputy Prime Minister (DPM)</h3>
+              <p class="w3-opacity w3-medium">Second speaker for the Opening Government.</p>
+              <p>Supports the PM's arguments, introduces additional points, and refutes the Opposition's arguments.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Opening Opposition Section -->
+    <div class="w3-container" style="padding:64px 16px" id="opening-opposition">
+      <h3 class="w3-center w3-xlarge">Opening Opposition (OO)</h3>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:32px">
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Leader of the Opposition (LO)">
+            <div class="w3-container">
+              <h3 class="w3-large">Leader of the Opposition (LO)</h3>
+              <p class="w3-opacity w3-medium">First speaker for the Opening Opposition.</p>
+              <p>Responds to the PM's definition, presents the opposition case, and rebuts the Opening Government's arguments.</p>
+              <a href = "join_us.html">  <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Deputy Leader of the Opposition (DLO)">
+            <div class="w3-container">
+              <h3 class="w3-large">Deputy Leader of the Opposition (DLO)</h3>
+              <p class="w3-opacity w3-medium">Second speaker for the Opening Opposition.</p>
+              <p>Reinforces the LO's points, presents new arguments, and further refutes the Government's case.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Closing Government Section -->
+    <div class="w3-container" style="padding:64px 16px" id="closing-government">
+      <h3 class="w3-center w3-xlarge">Closing Government (CG)</h3>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:32px">
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Member of Government (MG)">
+            <div class="w3-container">
+              <h3 class="w3-large">Member of Government (MG)</h3>
+              <p class="w3-opacity w3-medium">First speaker for the Closing Government.</p>
+              <p>Extends the Government's case by introducing new arguments and perspectives.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Government Whip (GW)">
+            <div class="w3-container">
+              <h3 class="w3-large">Government Whip (GW)</h3>
+              <p class="w3-opacity w3-medium">Final speaker for the Closing Government.</p>
+              <p>Summarizes the Government's case, refutes the Opposition's new arguments, and provides a compelling conclusion.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Closing Opposition Section -->
+    <div class="w3-container" style="padding:64px 16px" id="closing-opposition">
+      <h3 class="w3-center w3-xlarge">Closing Opposition (CO)</h3>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:32px">
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Member of Opposition (MO)">
+            <div class="w3-container">
+              <h3 class="w3-large">Member of Opposition (MO)</h3>
+              <p class="w3-opacity w3-medium">First speaker for the Closing Opposition.</p>
+              <p>Extends the Opposition's case by adding new arguments and addressing the points made by the Closing Government.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l6 m6 w3-margin-bottom">
+          <div class="w3-card w3-margin fixed-card">
+            <img src="profil_placeholder.jpg" alt="Opposition Whip (OW)">
+            <div class="w3-container">
+              <h3 class="w3-large">Opposition Whip (OW)</h3>
+              <p class="w3-opacity w3-medium">Final speaker for the Closing Opposition.</p>
+              <p>Summarizes the Opposition's case, refutes the Government's new arguments, and concludes the debate effectively.</p>
+                <a href = "join_us.html"><p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-play"></i> Play</button></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 
 
 
 <!-- Team Section -->
-<!-- <div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">Echipa</h3>
-  <p class="w3-center w3-large">Fă cunoștință cu agenții noștri</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="profil_placeholder.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Lorem ipsum</h3>
-          <p class="w3-opacity">Lorem ipsum</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="profil_placeholder.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Lorem ipsum</h3>
-          <p class="w3-opacity">Lorem ipsum</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  
-  </div>
-</div> -->
-<div class="w3-container " style="padding:128px 16px" id="work">
-<h3 class="w3-center">Echipa</h3>
-<p class="w3-center w3-large">Fă cunoștință cu agenții noștri</p>
-<div class="w3-center w3-white w3-padding-64">
-  <div class="w3-row w3-center">
-
-  <div class="w3-half w3-center w3-white ">
-    <div class="w3-card-4 w3-center w3-dark-grey w3-margin-right  w3-margin-left w3-margin-top"  >
-      <img src="ioanes.jpeg" style="width:50%">
-      <div class="w3-container w3-center w3-white ">
-        <p class="w3-xlarge">Ioaneș Daniel</p>
-        <p>Agent imobiliar</p>
-        <p><i class="fa fa-phone fa-fw w3-xlarge "></i> Telefon : 0740 234 155</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="w3-half w3-center w3-white">
-    <div class="w3-card-4 w3-center w3-dark-grey w3-margin-left w3-margin-right w3-margin-top" >
-      <img src="pavel.jpeg" style="width:50%">
-      <div class="w3-container w3-center w3-white">
-        <p class="w3-xlarge">Dragoș Pavel</p>
-        <p>Agent Imobiliar</p>
-        <p><i class="fa fa-phone fa-fw w3-xlarge "></i> Telefon : 0748 583 327</p>
-      </div>
-    </div>
-  </div>
-  
-  
-  </div>
-  
-  </div>
-</div>
-</div>
 
 
 
 
 
 
-
-
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>OFERTE</h3>
- 
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Case</li>
-        
-          <h2 class="w3-wide">0</h2>
-         
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large"><a href="case.html" class="w3-bar-item w3-button">Caută</a></button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Terenuri</li>
-   
-          <h2 class="w3-wide">0</h2>
-        
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large"><a href="terenuri.html" class="w3-bar-item w3-button">Caută</a></button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Apartamente</li>
-       
-        
-          <h2 class="w3-wide">0</h2>
-        
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large"><a href="apartamente.html" class="w3-bar-item w3-button">Caută</a></button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">CONTACT</h3>
- 
-  <div style="margin-top:48px">
-    <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Locatie</p> -->
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon : 0740 234 155</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon : 0748 583 327</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ioanesdany@yahoo.com</p>
-   
- 
-
-
-
-
-
-
-    <!-- Image of location/map -->
-    <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-</div>
 
 
 
@@ -443,10 +289,10 @@ img {vertical-align: middle;}
 
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Inapoi sus</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>back to the top</a>
   <div class="w3-xlarge w3-section">
-    <a href= https://www.facebook.com/ioanes.daniel target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href= https://www.instagram.com/ioanes.daniel target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href= https://www.facebook.com/acdvddc/ target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href= https://www.instagram.com/devadebateclub/ target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
   
     
   </div>
@@ -495,7 +341,7 @@ function w3_close() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
   }
   </script>
 
