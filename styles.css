@@ -41,22 +41,28 @@ img { vertical-align: middle; }
 .title_bp h1 {
   margin: 0; /* Remove default margin */
   padding: 20px 0; /* Add padding for spacing */
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 900;
 
 }
 .title_bp {
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 .title_bp .content_1 {
   margin-top: 10px; /* Add some space between the title and the content */
   padding: 20px; /* Add padding for better spacing */
 }
 .content_1{
-  font-size: 30px;
+  font-size: 16px;
   text-align: justify; /* Justify the text */
-  max-width: 800px;
+  max-width: 1200px;
+  text-indent: 2em;
+  
+}
+.subtitle{
+  font-size: 22px;
+  font-weight: 600;
 }
 /* Style for the quote text */
 .text h1 {
@@ -69,7 +75,15 @@ img { vertical-align: middle; }
   padding: 20px; /* Add padding for better spacing */
   line-height: 1.2; /* Adjust line height */
 }
-
+.joinme {
+  text-align: center;       
+  font-size: 45px;           
+  font-weight: bold;         
+  padding-top: 100px;          
+  margin-top: 100px;    
+  padding-bottom: 100px;          
+  margin-bottom: 100px;        
+}
 /* Style for the text container */
 .text {
   display: flex;
